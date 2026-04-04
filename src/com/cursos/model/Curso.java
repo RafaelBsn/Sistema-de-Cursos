@@ -9,21 +9,17 @@ public class Curso {
     private long id;
 
     //CONSTRUTOR
-    public Curso(long id,String nome, int cargaHoraria, String professor) {
+    public Curso(long id, String nome, int cargaHoraria, String professor) {
         this.id = id;
         this.nome = nome;
         this.cargaHoraria = cargaHoraria;
         this.professor = professor;
     }
 
-    //GETTERS
+    // GETTERS
 
     public long getId() {
         return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
     }
 
     public String getNome() {
@@ -54,9 +50,9 @@ public class Curso {
 
     @Override
     public String toString() {
-        return String.format("Curso : %s " +
-                " | ID: %s " +
-                " | Carga horária : %s " +
-                " | Professor : %s",nome,id,cargaHoraria,professor);
+        return String.format("ID: %s " +
+                " | Curso: %s " +
+                " | Carga horária: %s " +
+                " | Professor: %s \n", id, nome, cargaHoraria, professor);
     }
 }
